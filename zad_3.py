@@ -1,0 +1,7 @@
+# zad_3
+def print_even():
+    for i in range(10):
+        if i%2 == 0:
+            print(i)
+
+print_even()
