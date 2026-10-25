@@ -13,7 +13,7 @@ class Student:
         return self._marks
 
     def is_passed(self):
-        return (sum(self._marks)/len(self._marks)) > 50
+        return (sum(self._marks) / len(self._marks)) > 50
 
 
 stud1 = Student("Marian", [50, 51, 60])
