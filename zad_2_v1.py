@@ -2,7 +2,7 @@
 def print_numbers(a, b, c, d, e):
     result = []
     for i in (a, b, c, d, e):
-        result.append(i*2)
+        result.append(i * 2)
     return result
 
 
