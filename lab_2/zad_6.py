@@ -6,4 +6,5 @@ def lists(a: list, b: list) -> list:
         result2.append(i**3)
     return result2
 
-print(lists([1,2,3,4],[4,4,2,5,6]))
+
+print(lists([1, 2, 3, 4], [4, 4, 2, 5, 6]))

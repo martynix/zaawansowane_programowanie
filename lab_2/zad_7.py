@@ -1,4 +1,4 @@
-# zad_7 
+# zad_7
 
 import argparse
 from typing import Optional
@@ -46,7 +46,10 @@ class Brewery:
     def __str__(self) -> str:
         miejsce = f"{self.city}, {self.country}"
         strona = self.website_url if self.website_url else "brak strony"
-        return f"Browar: {self.name} | Typ: {self.brewery_type} | Lokalizacja: {miejsce} | WWW: {strona}"
+        return (
+            f'Browar: {self.name} | Typ: {self.brewery_type} '
+            f'| Lokalizacja: {miejsce} | WWW: {strona}'
+        )
 
 
 def main() -> None:

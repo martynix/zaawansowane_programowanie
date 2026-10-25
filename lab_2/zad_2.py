@@ -2,4 +2,5 @@
 def numbers(a: int, b: int) -> int:
     return a * b
 
-print(numbers(2,3))
+
+print(numbers(2, 3))

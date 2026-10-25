@@ -1,6 +1,7 @@
 # zad_3
 def is_even(number: int) -> bool:
-    number % 2 == 0:
+    return number % 2 == 0
+
 
 result = is_even(2)
 
