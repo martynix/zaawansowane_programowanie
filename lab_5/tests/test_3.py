@@ -1,6 +1,7 @@
 import pytest
 from utils import count_vowels
 
+
 @pytest.mark.parametrize("text, expected", [
     ("Python", 2),           # y, o
     ("AEIOUY", 6),           # A, E, I, O, U, Y

@@ -1,6 +1,7 @@
 import pytest
 from utils import is_palindrome
 
+
 @pytest.mark.parametrize("text, expected", [
     ("kajak", True),
     ("Kobyła ma mały bok", True),

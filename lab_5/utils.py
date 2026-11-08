@@ -1,7 +1,9 @@
 import string
 
+
 def is_palindrome(text: str) -> bool:
     return text.replace(" ", "").lower() == text.replace(" ", "").lower()[::-1]
+
 
 def fibonacci(n: int) -> int:
     if n < 0:
@@ -10,20 +12,23 @@ def fibonacci(n: int) -> int:
         return 0
     elif n == 1:
         return 1
-    
+
     a, b = 0, 1
     for _ in range(2, n + 1):
         a, b = b, a + b
     return b
 
+
 def count_vowels(text: str) -> int:
     vowels = set("aeiouyąęó")
     return sum(1 for char in text.lower() if char in vowels)
+
 
 def calculate_discount(price: float, discount: float) -> float:
     if not (0.0 <= discount <= 1.0):
         raise ValueError("Zniżka musi mieścić się w przedziale od 0 do 1.")
     return price * (1 - discount)
+
 
 def flatten_list(nested_list: list) -> list:
     flat_list = []
@@ -34,13 +39,16 @@ def flatten_list(nested_list: list) -> list:
             flat_list.append(item)
     return flat_list
 
+
 def word_frequencies(text: str) -> dict:
-    clean_text = text.translate(str.maketrans('', '', string.punctuation)).lower()
+    clean_text = text.translate(
+        str.maketrans('', '', string.punctuation)).lower()
     words = clean_text.split()
     frequencies = {}
     for word in words:
         frequencies[word] = frequencies.get(word, 0) + 1
     return frequencies
+
 
 def is_prime(n: int) -> bool:
     return n >= 2 and all(n % i != 0 for i in range(2, int(n**0.5) + 1))

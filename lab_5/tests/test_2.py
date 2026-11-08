@@ -1,6 +1,7 @@
 import pytest
 from utils import fibonacci
 
+
 @pytest.mark.parametrize("n, expected", [
     (0, 0),
     (1, 1),
@@ -9,6 +10,7 @@ from utils import fibonacci
 ])
 def test_fibonacci(n, expected):
     assert fibonacci(n) == expected
+
 
 def test_fibonacci_negative():
     with pytest.raises(ValueError):
