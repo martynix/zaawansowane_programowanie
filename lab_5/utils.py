@@ -41,8 +41,7 @@ def flatten_list(nested_list: list) -> list:
 
 
 def word_frequencies(text: str) -> dict:
-    clean_text = text.translate(
-        str.maketrans('', '', string.punctuation)).lower()
+    clean_text = text.translate(str.maketrans("", "", string.punctuation)).lower()
     words = clean_text.split()
     frequencies = {}
     for word in words:
@@ -52,5 +51,6 @@ def word_frequencies(text: str) -> dict:
 
 def is_prime(n: int) -> bool:
     return n >= 2 and all(n % i != 0 for i in range(2, int(n**0.5) + 1))
+
 
 # run in bash: python -m pytest
